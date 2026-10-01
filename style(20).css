@@ -1,0 +1,996 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f6f7f9;
+
+    color: #172033;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+
+    height: 76px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    border-bottom: 1px solid #e8eaf0;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+}
+
+
+.logo {
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.navigation {
+
+    display: flex;
+
+    gap: 30px;
+}
+
+
+.navigation a {
+
+    text-decoration: none;
+
+    color: #596273;
+
+    font-size: 15px;
+
+    transition: 0.2s;
+}
+
+
+.navigation a:hover {
+
+    color: #2563eb;
+}
+
+
+.login-button {
+
+    border: 1px solid #2563eb;
+
+    background: white;
+
+    color: #2563eb;
+
+    padding: 10px 22px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+/* ================= USER ================= */
+
+.user-button {
+
+    border: none;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+
+    background: #111827;
+
+    color: white;
+
+    padding: 90px 7%;
+}
+
+
+.hero-content {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.hero-text {
+
+    max-width: 650px;
+}
+
+
+.small-title {
+
+    color: #60a5fa;
+
+    font-weight: bold;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero h1 {
+
+    font-size: 58px;
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-description {
+
+    color: #cbd5e1;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    max-width: 570px;
+
+    margin-bottom: 35px;
+}
+
+
+.hero-car {
+
+    font-size: 180px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.main-button {
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 25px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.main-button:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================= SECTIONS ================= */
+
+.section {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 90px 30px;
+}
+
+
+.section-header {
+
+    margin-bottom: 45px;
+}
+
+
+.section-label {
+
+    color: #2563eb;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+
+.section-header h2 {
+
+    font-size: 38px;
+
+    margin-bottom: 12px;
+}
+
+
+.section-header p:last-child {
+
+    color: #697386;
+
+    font-size: 16px;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.service-card {
+
+    background: white;
+
+    border: 1px solid #e6e8ed;
+
+    border-radius: 12px;
+
+    padding: 28px;
+
+    transition: 0.2s;
+}
+
+
+.service-card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.07);
+}
+
+
+.service-icon {
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+
+.service-card h3 {
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+
+.service-card p {
+
+    color: #697386;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+}
+
+
+.service-info {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #eee;
+
+    font-size: 14px;
+}
+
+
+/* ================= GARAGE ================= */
+
+.garage-section {
+
+    background: #f6f7f9;
+}
+
+
+.car-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.car-card {
+
+    background: white;
+
+    border: 1px solid #e6e8ed;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    position: relative;
+}
+
+
+.car-top {
+
+    display: flex;
+
+    gap: 20px;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+
+.car-image {
+
+    width: 100px;
+
+    height: 90px;
+
+    background: #eef2ff;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 45px;
+}
+
+
+.car-information h3 {
+
+    font-size: 22px;
+
+    margin-bottom: 7px;
+}
+
+
+.car-information p {
+
+    color: #697386;
+
+    margin-bottom: 6px;
+}
+
+
+.car-details {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+
+.car-detail {
+
+    background: #f8fafc;
+
+    padding: 12px;
+
+    border-radius: 8px;
+}
+
+
+.car-detail span {
+
+    display: block;
+
+    font-size: 12px;
+
+    color: #697386;
+
+    margin-bottom: 5px;
+}
+
+
+.car-detail strong {
+
+    font-size: 14px;
+}
+
+
+.problem-box {
+
+    background: #fff7ed;
+
+    color: #9a3412;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    margin-top: 15px;
+
+    font-size: 14px;
+}
+
+
+.car-delete {
+
+    position: absolute;
+
+    right: 15px;
+
+    top: 15px;
+
+    border: none;
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+    width: 30px;
+
+    height: 30px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+
+.add-car-button {
+
+    margin-top: 25px;
+
+    padding: 12px 20px;
+
+    border: 1px dashed #2563eb;
+
+    color: #2563eb;
+
+    background: white;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+/* ================= APPOINTMENTS ================= */
+
+.appointment-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.appointment-card {
+
+    background: white;
+
+    border: 1px solid #e6e8ed;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.appointment-date {
+
+    width: 70px;
+
+    height: 70px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+
+.appointment-date strong {
+
+    font-size: 25px;
+}
+
+
+.appointment-date span {
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+.appointment-information {
+
+    flex: 1;
+}
+
+
+.appointment-information h3 {
+
+    margin-bottom: 7px;
+}
+
+
+.appointment-information p {
+
+    color: #697386;
+
+    margin-bottom: 4px;
+}
+
+
+.appointment-status {
+
+    padding: 9px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    background: #fff7ed;
+
+    color: #c2410c;
+}
+
+
+.empty-state {
+
+    background: white;
+
+    border: 1px dashed #d5d9e2;
+
+    border-radius: 12px;
+
+    padding: 50px;
+
+    text-align: center;
+
+    color: #697386;
+}
+
+
+/* ================= ADVANTAGES ================= */
+
+.advantages {
+
+    background: white;
+
+    padding: 70px 7%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 50px;
+
+    text-align: center;
+}
+
+
+.advantage-icon {
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+
+.advantage h3 {
+
+    margin-bottom: 10px;
+}
+
+
+.advantage p {
+
+    color: #697386;
+
+    line-height: 1.5;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+
+    background: #111827;
+
+    color: white;
+
+    padding: 40px 7%;
+
+    text-align: center;
+}
+
+
+.footer p {
+
+    color: #9ca3af;
+
+    margin-top: 10px;
+}
+
+
+/* ================= MODAL ================= */
+
+.modal {
+
+    display: none;
+
+    position: fixed;
+
+    z-index: 1000;
+
+    left: 0;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background:
+        rgba(0, 0, 0, 0.55);
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+.modal-content {
+
+    background: white;
+
+    width: 100%;
+
+    max-width: 500px;
+
+    border-radius: 14px;
+
+    padding: 35px;
+
+    position: relative;
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+}
+
+
+.modal-content h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+
+.modal-content > p {
+
+    color: #697386;
+
+    margin-bottom: 25px;
+}
+
+
+.close-button {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 20px;
+
+    background: none;
+
+    border: none;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+    color: #697386;
+}
+
+
+.modal-content label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    margin-top: 18px;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+
+.modal-content input,
+.modal-content select,
+.modal-content textarea {
+
+    width: 100%;
+
+    border: 1px solid #d5d9e2;
+
+    border-radius: 7px;
+
+    padding: 12px;
+
+    font-size: 14px;
+
+    font-family: inherit;
+}
+
+
+.modal-content textarea {
+
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+
+.full-button {
+
+    width: 100%;
+
+    margin-top: 25px;
+}
+
+
+.text-button {
+
+    width: 100%;
+
+    background: none;
+
+    border: none;
+
+    color: #2563eb;
+
+    margin-top: 15px;
+
+    cursor: pointer;
+}
+
+
+/* ================= PROFILE ================= */
+
+.profile-box {
+
+    text-align: center;
+
+    padding: 25px;
+
+    background: #f8fafc;
+
+    border-radius: 12px;
+}
+
+
+.profile-avatar {
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+
+.profile-box h3 {
+
+    margin-bottom: 5px;
+}
+
+
+.profile-box p {
+
+    color: #697386;
+}
+
+
+.logout-button {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 13px;
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    .navigation {
+
+        display: none;
+    }
+
+
+    .hero {
+
+        padding: 60px 25px;
+    }
+
+
+    .hero-content {
+
+        display: block;
+    }
+
+
+    .hero h1 {
+
+        font-size: 42px;
+    }
+
+
+    .hero-car {
+
+        font-size: 100px;
+
+        margin-top: 30px;
+    }
+
+
+    .services-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .car-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .advantages {
+
+        grid-template-columns: 1fr;
+
+        padding: 50px 25px;
+    }
+
+
+    .appointment-card {
+
+        flex-wrap: wrap;
+    }
+
+
+    .appointment-status {
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+}
